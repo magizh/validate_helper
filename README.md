@@ -18,14 +18,13 @@
 ```
 * Add data-display to specify the display attribute in validate.js (optional)
 ```html
- <input type="email" name="email" id="email" class="validate" data-rules="required|valid_email" 
-<br> data-display="Email address">
+ <input type="email" data-display="Email address">
 ```
 * Call the validate() function by including the following lines inside a script tag before closing the body tag
+  Additionally you can specify the callback fuuntion to be handled(optional) after form validation is successful 
 ```javascript
 var $my_form =  $("#loginForm")
 $my_form.validate( self, self.onloginFormSubmit )
 ``` 
-
 
 Contact Email: mahilis@live.com
