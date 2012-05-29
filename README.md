@@ -10,7 +10,7 @@
 ```
 * Add class "validate" for the form elements you want to validate. 
 ```html
- <input type="email" name="email" id="email" class="validate">
+ <input type="email" name="email" id="email" **class="validate"**>
 ```
 * Add data-rules to specify the rules in validate.js 
 ```html
@@ -20,11 +20,11 @@
 ```html
  <input type="email" name="email" id="email" class="validate" data-rules="required|valid_email" data-display="Email address">
 ```
-*Call the validate_helper function by including the following lines before 1
+*Call the validate_helper function by including the following lines before 
 ```html
  </body>
 ```tag 
-  *```html 1a
+ *```html 
     <script>
     </script>
   ```
