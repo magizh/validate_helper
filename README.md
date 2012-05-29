@@ -20,11 +20,12 @@
 ```html
  <input type="email" name="email" id="email" class="validate" data-rules="required|valid_email" data-display="Email address">
 ```
-*Call the validate() function by including the following lines before closing the body tag
-```html
- <script>
+*Call the validate() function by including the following lines inside a script tag before closing the body tag
+```javascript
 var $my_form =  $("#loginForm")
 $my_form.validate( self, self.onloginFormSubmit )
- </script>
 ``` 
+
+*
+
 Contact Email: mahilis@live.com
