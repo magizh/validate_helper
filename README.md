@@ -5,8 +5,11 @@
 ### Form attributes to be added 
 
 * name,id for the form tag. 
-  * ```html
-           <form name="login" id= "login">
-    ```
-* class "validate" for the form elements you want to validate. (eg) <input type="email" class="validate">
+```html
+ <form name="login" id= "login">
+```
+* class "validate" for the form elements you want to validate. 
+```html
+ <input type="email" class="validate">
+```
 
