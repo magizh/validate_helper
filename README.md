@@ -4,12 +4,21 @@
 
 ### Form attributes to be added 
 
-* name,id for the form tag. 
+* Add name,id for the form tag. 
 ```html
  <form name="login" id= "login">
 ```
-* class "validate" for the form elements you want to validate. 
+* Add class "validate" for the form elements you want to validate. 
 ```html
- <input type="email" class="validate">
+ <input type="email" name="email" id="email" class="validate">
 ```
+* Add data-rules to specify the rules in validate.js 
+```html
+ <input type="email" name="email" id="email" class="validate" data-rules="required|valid_email">
+```
+* Add data-display to specify the display attribute in validate.js (optional)
+```html
+ <input type="email" name="email" id="email" class="validate" data-rules="required|valid_email" data-display="Email address">
+```
+
 
