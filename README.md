@@ -20,11 +20,11 @@
 ```html
  <input type="email" name="email" id="email" class="validate" data-rules="required|valid_email" data-display="Email address">
 ```
-*Call the validate_helper function by including the following lines before 
+*Call the validate_helper function by including the following lines before 1
 ```html
  </body>
 ```tag 
-  *```html
+  *```html 1a
     <script>
     </script>
   ```
