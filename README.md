@@ -1,6 +1,6 @@
 # validate_helper 
   
-  validate_helper.js is a jquery plugin that helps you use [validate.js]http://rickharrison.github.com/validate.js/ to validate forms, without the need for creating the validation object. Rather you simply add few attributes to the form elements as stated below.
+  validate_helper.js is a jquery plugin that helps you use [validate.js](http://rickharrison.github.com/validate.js/)m to validate forms, without the need for creating the validation object. Rather you simply add few attributes to the form elements as stated below.
 
 ### Form attributes to be added 
 
@@ -18,10 +18,10 @@
 ```
 * Add data-display to specify the display attribute in validate.js (optional)
 ```html
- <input type="email" data-display="Email address">
+ <input type="email" <input type="email" name="email" id="email" class="validate" 
 ```
 ```html
- <input type="email" data-display="Email address">
+ data-rules="required|valid_email">data-display="Email address">
 ```
 * Call the validate() function by including the following lines inside a script tag before closing the body tag.
   Additionally you can specify the callback fuuntion to be handled(optional) after form validation is successful 
