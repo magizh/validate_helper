@@ -1,6 +1,6 @@
 # validate_helper 
   
-  validate_helper.js is a jquery plugin that helps you use validate.js to validate forms, without the need for creating the validation object. Rather you simply add few attributes to the form elements as stated below.
+  validate_helper.js is a jquery plugin that helps you use [validate.js]http://rickharrison.github.com/validate.js/ to validate forms, without the need for creating the validation object. Rather you simply add few attributes to the form elements as stated below.
 
 ### Form attributes to be added 
 
