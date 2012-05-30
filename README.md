@@ -6,7 +6,7 @@
   In addition to that validate_helper uses [bootstrap](http://twitter.github.com/bootstrap/) to display the error messages.
 
 ### Libraries required 
-* Jquery.min-1.7.2.js
+* jquery-1.7.1.min.js
 * bootstrap.min.css
 * validate.js
 * validate_helper.js
