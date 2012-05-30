@@ -14,13 +14,17 @@
 
 ```html
  <form name="loginForm" id= "loginForm">
- <input type="email" <input type="email" name="email" id="email" class="validate"  data-rules="required|valid_email">data-display="Email address">
+   <input type="email" <input type="email" name="email" id="email" class="validate"  data-rules="required|valid_email">data-display="Email address">
+ </form> 
+```
+* Add the function call as shown below 
+
+```html
 <script>
 var $my_form =  $("#loginForm")
 $my_form.validate( self, self.onloginFormSubmit )
 </script>
-</form>
-``` 
+```
 
 * Visit [validatehelper.cloudfoundry.com](http://validatehelper.cloudfoundry.com/) to check out the form validation example.
 
