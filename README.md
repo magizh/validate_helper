@@ -3,7 +3,7 @@
   validate_helper.js is a jquery plugin that helps you use [validate.js](http://rickharrison.github.com/validate.js/) to validate forms, without the need for creating the validation object. Rather you simply add few attributes to the form elements as stated below.
   visit [validatehelper.cloudfoundry.com](http://validatehelper.cloudfoundry.com/) to check out the form validation example and documentation.
   
-  In addition to that validate_helper used [bootstrap](http://twitter.github.com/bootstrap/) to display the error messages.
+  In addition to that validate_helper uses [bootstrap](http://twitter.github.com/bootstrap/) to display the error messages.
 
 ### Form attributes to be added 
 
