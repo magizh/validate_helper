@@ -29,7 +29,7 @@ validate: function( callback ) {
                 var $target = $this
                     .find("*[name='" + err.id + "']")
                     .next(".help-block")
-                    .html("<i src='/img/close.png'></i>"+err.message)
+                    .html(err.message)
                 // Adds error class to the controlgroup (bootstrap)
                 $target.closest(".control-group").removeClass("error").addClass("error")
               })
