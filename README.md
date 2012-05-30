@@ -14,7 +14,8 @@
 
 ```html
  <form name="loginForm" id= "loginForm">
-   <input type="email" <input type="email" name="email" id="email" class="validate"  data-rules="required|valid_email">data-display="Email address">
+   <input type="email" name="email" id="email" class="validate"  data-rules="required|valid_email"  data-display="Email address">
+   <input type="password" name="password" id="password" class="validate" data-rules="required" >
  </form> 
 ```
 * Add the function call as shown below 
