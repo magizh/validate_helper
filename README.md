@@ -33,6 +33,6 @@ var $my_form =  $("#loginForm")
 $my_form.validate( self, self.onloginFormSubmit )
 ``` 
 
-*visit [validatehelper.cloudfoundry.com](http://validatehelper.cloudfoundry.com/) to check out the form validation example.
+* Visit [validatehelper.cloudfoundry.com](http://validatehelper.cloudfoundry.com/) to check out the form validation example.
 
 Contact Email: mahilis@live.com
