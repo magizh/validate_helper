@@ -1,6 +1,6 @@
 ; !function( $ ){
 $.fn.extend({
-validate: function( that, callback ) {
+validate: function( callback ) {
 
         // Checks if instance is already created 
         if ( this.data("instance") ) {
@@ -17,7 +17,6 @@ validate: function( that, callback ) {
                      display: $el.attr("data-display")
                    })
         })
-        console.log(temp)
         // Create FormValidator object
         var validator = new FormValidator($this.attr('name'), temp, function(errors, event) {
           // Clear all error fields
@@ -30,14 +29,14 @@ validate: function( that, callback ) {
                 var $target = $this
                     .find("*[name='" + err.id + "']")
                     .next(".help-block")
-                    .html("<i class='icon-remove-sign icon-space-r'></i>"+err.message)
+                    .html("<i src='/img/close.png'></i>"+err.message)
                 // Adds error class to the controlgroup (bootstrap)
                 $target.closest(".control-group").removeClass("error").addClass("error")
               })
              return false 
           } else {
             if (typeof callback === "function") {
-              callback ( that, $this, event ) //execute callback on form success
+              callback ($this, event ) //execute callback on form success
             }
           }
         });

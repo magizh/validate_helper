@@ -3,26 +3,25 @@
 <script type="text/javascript" src="validate.min.js"></script>
 <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
 <script src="validate_helper.js"></script>
+<link href="bootstrap.min.css" rel="stylesheet">
 </head>
 <body>
-
+<div class="container">
 <h2>Sign In</h2>
 <form id="loginForm" name="loginForm" class="form-inline" action="/login/" method="POST">
 <div class="control-group">
-<input type="text" name="email" id="email" data-rules="required|valid_email" class="validate email input-medium mandatory input-xlarge" placeholder="Email"><p class="help-block"></p>
+<input type="text" name="email" id="email" data-rules="valid_email" class="validate input-medium input-xlarge" placeholder="Email"><p class="help-block"></p>
 </div>
 <div class="control-group">
-<input type="password" name="password" id="password" data-rules="required" class="validate input-medium mandatory input-xlarge" placeholder="Password"><p class="help-block"></p>
+<input type="password" name="password" id="password" data-rules="required" class="validate input-medium input-xlarge" placeholder="Password"><p class="help-block"></p>
 </div>
-<button type="submit" class="btn btn-primary">
-<i class="icon-signin icon-space-r"></i><strong>Sign in</strong>
+<button type="submit" class="btn btn-primary">Sign in
 </button>
 </form>
-
+</div>
 <script>
 var $my_form =  $("#loginForm")
-$my_form.validate( self, self.onloginFormSubmit )
-
+$my_form.validate(function($form, e){alert("submitted")})
 </script>
 </body>
 </html>
