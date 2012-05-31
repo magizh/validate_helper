@@ -1,3 +1,9 @@
+/* ===================================================
+ * validate-helper.js
+ * A jquery plugin that Helps to validate the form with 
+ * validate.js and bootstrap
+ * ===================================================
+ */
 ; !function( $ ){
 $.fn.extend({
 validate: function( callback ) {
