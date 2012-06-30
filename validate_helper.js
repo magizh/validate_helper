@@ -33,7 +33,7 @@ validate: function( callback ) {
               $.each(errors, function (index, err) {
                 // Displays the erros message in the help-block
                 var $target = $this
-                    .find("*[name='" + err.id + "']")
+                    .find("*[id='" + err.id + "']")
                     .next(".help-block")
                     .html(err.message)
                 // Adds error class to the controlgroup (bootstrap)
